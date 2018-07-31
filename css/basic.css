@@ -1,0 +1,35 @@
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    /*在一些手机上，如iphone,点击按钮等颜色会出现点击态的背景色，设置为透明就看不出*/
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing:border-box;/*border自适应*/
+}
+body {
+    font-size: 14px;
+    font-family: 'Microsoft YaHei',sans-serif;
+    color: #000000;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    list-style: none;
+}
+input,textarea {
+    border: none;
+    /*用户无法调整元素的尺寸*/
+    resize: none;
+    outline: none;
+    /*去除浏览器默认样式*/
+    -webkit-appearance:none;
+}
+.clearfix::before,.clearfix::after {
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
