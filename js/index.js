@@ -21,7 +21,6 @@ $(function () {
                 $('.jd_banner_img').css({'left':0});
                 index = 0;
             }
-            console.log(index);
             $('.jd_banner_img').stop().animate({'left':-width*index},1000);
             // if(index == imglength-1){
             //     $('.jd_banner_dotted ul').find('li').eq(0).addClass('col').siblings().removeClass('col');
