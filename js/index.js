@@ -16,7 +16,7 @@ $(function () {
         }
         function banner() {
             ++index;
-
+            console.log(index);
             if(index == imglength){
                 $('.jd_banner_img').css({'left':0});
                 index = 0;
