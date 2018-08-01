@@ -69,6 +69,8 @@
 }
 .jd_banner .jd_banner_img {
     width: 1000%;
+    position: relative;
+    left: 0;
 }
 .jd_banner .jd_banner_img li {
     width: 10%;
